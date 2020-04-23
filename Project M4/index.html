@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="flex">
+                    <div class="logo">
+                        <img src="./images/Bank icon.png" />
+                    </div>
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="#" class="visited">Bank</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Investment</a></li>
+                            <li><a href="#">Insurance</a></li>
+                            <li><a href="#">Mobile </a></li>
+                            <li><a href="#">Travel </a></li>
+                            <li><a href="#">Entertainment</a></li>
+                        </ul>
+                    </nav>
+                    <div class="enter">Enter</div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="mainPosition">
+                <div class="mainText">Online Currency Converter</div>
+                <div class='main'>
+                    <div class="left">
+                        <div class=statusText>I have</div>
+                        <div class='currencyLeft'>
+                            <div class="currencySelection">GBP</div>
+                            <div class="currencySelection">USD</div>
+                            <div class="currencySelection">EUR</div>
+                            <div class="currencySelection active">RUB</div>
+                            <div class="angle">BYR<span class="arrow"></span><select id='selectionLeft'>
+                                    <option value="GBP">GBP</option>
+                                    <option value="BGN">BGN</option>
+                                    <option value="BRL">BRL</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="CHF">CHF</option>
+                                    <option value="CNY">CNY</option>
+                                    <option value="CZK">CZK</option>
+                                    <option value="DKK">DKK</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="HKD">HKD</option>
+                                    <option value="HRK">HRK</option>
+                                    <option value="HUF">HUF</option>
+                                    <option value="IDR">IDR</option>
+                                    <option value="ILS">ILS</option>
+                                    <option value="INR">INR</option>
+                                    <option value="ISK">ISK</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="KRW">KRW</option>
+                                    <option value="MXN">MXN</option>
+                                    <option value="MYR">MYR</option>
+                                    <option value="NOK">NOK</option>
+                                    <option value="NZD">NZD</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="RON">RON</option>
+                                    <option value="RUB" selected>RUB</option>
+                                    <option value="SEK">SEK</option>
+                                    <option value="SGD">SGD</option>
+                                    <option value="THB">THB</option>
+                                    <option value="TRY">TRY</option>
+                                    <option value="USD">USD</option>
+                                    <option value="ZAR">ZAR</option>
+                                </select></div>
+                            <div class="inputBox"><input type="number" name="" id="leftInput" maxlength="10">
+                                <div id="leftResult"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="center"></div>
+
+                    <div class="right">
+                        <div class=statusText>I need</div>
+                        <div class='currencyRight'>
+                            <div class="currencySelection">GBP</div>
+                            <div class="currencySelection">RUB</div>
+                            <div class="currencySelection">EUR</div>
+                            <div class="currencySelection active">USD</div>
+                            <div class="angle">BYR<span class="arrow"></span><select id='selectionRight'>
+                                    <option value="GBP">GBP</option>
+                                    <option value="BGN">BGN</option>
+                                    <option value="BRL">BRL</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="CHF">CHF</option>
+                                    <option value="CNY">CNY</option>
+                                    <option value="CZK">CZK</option>
+                                    <option value="DKK">DKK</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="HKD">HKD</option>
+                                    <option value="HRK">HRK</option>
+                                    <option value="HUF">HUF</option>
+                                    <option value="IDR">IDR</option>
+                                    <option value="ILS">ILS</option>
+                                    <option value="INR">INR</option>
+                                    <option value="ISK">ISK</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="KRW">KRW</option>
+                                    <option value="MXN">MXN</option>
+                                    <option value="MYR">MYR</option>
+                                    <option value="NOK">NOK</option>
+                                    <option value="NZD">NZD</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="RON">RON</option>
+                                    <option value="RUB">RUB</option>
+                                    <option value="SEK">SEK</option>
+                                    <option value="SGD">SGD</option>
+                                    <option value="THB">THB</option>
+                                    <option value="TRY">TRY</option>
+                                    <option value="USD" selected>USD</option>
+                                    <option value="ZAR">ZAR</option>
+                                </select>
+                                </select></div>
+                        </div>
+                        <div class="inputBox"><input type="number" name="" id="rightInput" maxlength="10">
+                            <div id="rightResult"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loading">
+                <div>Loading...</div>
+            </div>
+        </main>
+    </body>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
