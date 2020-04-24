@@ -41,10 +41,10 @@
                     <div class="left">
                         <div class=statusText>I have</div>
                         <div class='currencyLeft'>
-                            <div class="currencySelection">GBP</div>
+                            <div class="currencySelection active">RUB</div>
                             <div class="currencySelection">USD</div>
                             <div class="currencySelection">EUR</div>
-                            <div class="currencySelection active">RUB</div>
+                            <div class="currencySelection">GBP</div>
                             <div class="angle">BYR<span class="arrow"></span><select id='selectionLeft'>
                                     <option value="GBP">GBP</option>
                                     <option value="BGN">BGN</option>
@@ -72,7 +72,7 @@
                                     <option value="PHP">PHP</option>
                                     <option value="PLN">PLN</option>
                                     <option value="RON">RON</option>
-                                    <option value="RUB" selected>RUB</option>
+                                    <option value="RUB">RUB</option>
                                     <option value="SEK">SEK</option>
                                     <option value="SGD">SGD</option>
                                     <option value="THB">THB</option>
@@ -80,7 +80,7 @@
                                     <option value="USD">USD</option>
                                     <option value="ZAR">ZAR</option>
                                 </select></div>
-                            <div class="inputBox"><input type="number" name="" id="leftInput" maxlength="10">
+                            <div class="inputBox"><input type="number" value name="" id="leftInput" maxlength="10">
                                 <div id="leftResult"></div>
                             </div>
                         </div>
@@ -91,10 +91,10 @@
                     <div class="right">
                         <div class=statusText>I need</div>
                         <div class='currencyRight'>
-                            <div class="currencySelection">GBP</div>
                             <div class="currencySelection">RUB</div>
-                            <div class="currencySelection">EUR</div>
                             <div class="currencySelection active">USD</div>
+                            <div class="currencySelection">EUR</div>
+                            <div class="currencySelection">GBP</div>
                             <div class="angle">BYR<span class="arrow"></span><select id='selectionRight'>
                                     <option value="GBP">GBP</option>
                                     <option value="BGN">BGN</option>
@@ -127,12 +127,12 @@
                                     <option value="SGD">SGD</option>
                                     <option value="THB">THB</option>
                                     <option value="TRY">TRY</option>
-                                    <option value="USD" selected>USD</option>
+                                    <option value="USD">USD</option>
                                     <option value="ZAR">ZAR</option>
                                 </select>
                                 </select></div>
                         </div>
-                        <div class="inputBox"><input type="number" name="" id="rightInput" maxlength="10">
+                        <div class="inputBox"><input type="number" value="1" name="" id="rightInput" maxlength="10">
                             <div id="rightResult"></div>
                         </div>
                     </div>
